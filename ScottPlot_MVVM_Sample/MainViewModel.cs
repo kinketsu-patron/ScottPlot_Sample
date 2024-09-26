@@ -2,7 +2,7 @@
 
 namespace ScottPlot_MVVM_Sample
 {
-    public class MainViewModel : NotifyChanged
+    public class MainViewModel /*: NotifyChanged*/
     {
         #region メンバ変数
         private GraphModel m_GraphModel;
@@ -20,7 +20,7 @@ namespace ScottPlot_MVVM_Sample
         public MainViewModel( )
         {
             m_GraphModel = new GraphModel( );
-            m_GraphModel.PropertyChanged += ( sender, e ) => RaisePropertyChanged( );
+            //m_GraphModel.PropertyChanged += ( sender, e ) => RaisePropertyChanged( );
         }
         #endregion
     }
